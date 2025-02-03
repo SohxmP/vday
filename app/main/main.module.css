@@ -1,0 +1,107 @@
+.main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF85A1;
+    opacity: 1;
+    padding-right: 45px;
+    padding-bottom: 20px;
+    transition: opacity, background-color 2s ease;
+}
+
+.wrapper{
+    position: absolute;
+    height: 35vh;
+  width: 30vw;
+  background-color: #3760C9;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+  transition: all 2s ease;
+}
+
+.heart {
+    position: relative;
+    top: 44%;
+    left: 37.5%;
+    width: 32px; 
+    height: 32px; 
+    background-color: #ff1414;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 4;
+  }
+  
+  .heart:before {
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #ff1414; 
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+  
+  .heart:after {
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #ff1414; 
+    transform: translateX(-50%);
+    border-radius: 50%; 
+  }
+
+/* Envelope container */
+.envelope {
+    position: absolute;
+    height: 35vh;
+    width: 30vw;
+    border-top: 100px solid transparent;
+    border-right: 150px solid #C4DFF0;
+    border-bottom: 160px solid #C4DFF0;
+    border-left: 150px solid #a4d4f2;
+    cursor: pointer;
+    z-index: 3;
+}
+
+/* Letter inside the envelope */
+.letter {
+    position: relative;
+    top: 20px;
+    left: -15px;
+    width: 20vw;
+    height: 25vh;
+    background-color: white;
+    border-radius: 15px;
+    z-index: 2;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.letter p {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    color: #3B4049;
+  }
+
+.wrapper:hover .letter {
+    transform: translateY(-50px);
+}
+
+.vday{
+    position: absolute;
+}
+
+.vday > h1{
+    font-size: 6vw;
+    font-weight: 500;
+}

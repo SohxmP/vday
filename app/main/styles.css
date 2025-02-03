@@ -1,0 +1,126 @@
+@import url('https://api.fontshare.com/v2/css?f[]=rosaline@400&display=swap');
+
+.fade-in{
+    color: #ff194f;
+    opacity: 1;
+    background-color: transparent;
+    transition: all 1.5s ease;
+}
+
+.fade-out{
+    color: #FF85A1;
+    opacity: 0;
+    background-color: transparent;
+    transition: all 1.5s ease;
+}
+
+
+.vq{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 30%;
+    background-color: #FBB1BD;
+    box-shadow: #ff79a1 0px 0px 250px 2px;
+    border-radius: 25px;
+    opacity: 1;
+    transition: all 1.5s ease;
+}
+
+.vq > p{
+    font-size: 2vw;
+    font-weight: 800;
+    color: #ff194f;
+}
+
+span{
+    font-family: 'Rosaline', cursive;
+    font-size: 3vw;
+    color: #ff004c;
+}
+
+.vq-hidden{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 30%;
+    background-color: #FBB1BD;
+    box-shadow: #ff79a1 0px 0px 250px 2px;
+    border-radius: 25px;
+    opacity: 0;
+    z-index: -2;
+    transition: all 2s ease;
+}
+
+.vq > div{
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+button{
+    display: flex;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4vw;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: #ff194f;
+    color: #FF85A1;
+    text-indent: 0%;
+    transition: all 0.5s ease;
+}
+
+button:hover{
+    background-color: #cd003e;
+    color: #cd003e;
+}
+
+button::before{
+    content: 'Yes';
+    position: absolute;
+    opacity: 0;
+    color: #ff194f;
+}
+
+button:hover::before{
+    opacity: 1;
+    color: #FF85A1;
+}
+
+
+.vc-hidden{
+    position: absolute;
+    opacity: 0;
+    z-index: -2;
+}
+
+.vc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    transition: opacity 1.5s ease;
+}
+
+.vc > h1{
+    font-size: 7vh;
+    font-weight: 900;
+    color: #ff2164;
+}
+
+.vc > h1 > span{
+    font-size: 10vh;
+}
